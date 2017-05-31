@@ -22,3 +22,4 @@ for i=1:length(data)+n_pred
         ts=[ts smooth+trend+Is(mod(i-1,slen)+1)];
     end
 end
+ee=sum((data(1:length(data))-ts(1:length(data))).^2);
